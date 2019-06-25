@@ -1,8 +1,5 @@
 import random
 import numpy as np
-import time
-
-start_time = time.time()
 
 def generate_password(
 
@@ -18,8 +15,6 @@ def generate_password(
 	
 	
 	"""Generates a random password.
-
-
 
 	The password will be exactly `password_length` characters.
 
@@ -88,7 +83,3 @@ def generate_password(
 	np.random.shuffle(password)
 	password = "".join(password)
 	return password
-
-generate_password(1000000, True, True)
-	
-print("--- %s seconds ---" % (time.time() - start_time))
